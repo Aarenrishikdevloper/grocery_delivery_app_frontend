@@ -52,7 +52,7 @@ A **Grocery Delivery App** built with **React Native (RN CLI)** featuring:
 - Node.js (v16+)  
 - React Native CLI (`npx react-native@latest init`)  
 - Android Studio / Xcode (for emulator)  
-- Firebase (for auth, if used)  
+  
 - Razorpay API keys  
 
 ### **Steps**  
