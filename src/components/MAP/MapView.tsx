@@ -147,7 +147,7 @@ const MapViewComponent = ({
             />
           )}
         
-        {deliveryLocation && pickupLocation && !hasPickedUp &&(
+        {deliveryLocation && pickupLocation && !hasPickedUp && !hasAccepted&&(
         <ShapeSource id="polylineSource1" shape={polylineGeoJSON}>
           <LineLayer
             id="polyLineLayer1"
@@ -162,13 +162,13 @@ const MapViewComponent = ({
       )}
 
       {/* Show the active route segment (conditional) */}
-      {deliveryLocation && pickupLocation && (hasAccepted || hasPickedUp )&& (
+      {deliveryLocation && pickupLocation && (hasAccepted || hasPickedUp) && (
         <ShapeSource id="polylineSource2" shape={polylineGeoJSON2}>
           <LineLayer
             id="polyLineLayer2"
             style={{
-              lineColor: Colors.primary, // Different color for active segment
-              lineWidth: 6, // Thicker than the base line
+              lineColor: "#2871F2", // Different color for active segment
+              lineWidth: 5, // Thicker than the base line
               lineOpacity: 1,
               // Remove lineDasharray for solid line
             }}
